@@ -4,6 +4,7 @@ import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import ReferralPopup from "@/components/ReferralPopup";
 
 export const metadata: Metadata = {
   title: {
@@ -129,6 +130,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         {children}
         <Footer />
+        <ReferralPopup />
         <Analytics />
       </body>
     </html>
