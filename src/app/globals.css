@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 255 255 255;
+  --fg: 15 23 42;
+
+  --primary: 30 58 95;
+  --secondary: 255 87 34;
+  --muted: 100 116 139;
+
+  --card: 255 255 255;
+  --border: 226 232 240;
+
+  --shadow: 2 6 18;
+}
+
+html,
+body {
+  height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  color: rgb(var(--fg));
+  background: rgb(var(--bg));
+}
+
+@layer components {
+  .containerPad {
+    @apply mx-auto w-full max-w-6xl px-4 sm:px-6;
+  }
+
+  .page {
+    @apply min-h-[70vh] py-10 sm:py-14;
+  }
+
+  .h1 {
+    @apply text-3xl sm:text-5xl font-semibold tracking-tight;
+  }
+
+  .h2 {
+    @apply text-2xl sm:text-3xl font-semibold tracking-tight;
+  }
+
+  .lead {
+    @apply text-base sm:text-lg text-slate-600 leading-relaxed;
+  }
+
+  .card {
+    @apply rounded-2xl border border-slate-200 bg-white shadow-[0_8px_28px_rgba(2,6,23,0.06)];
+  }
+
+  .btnPrimary {
+    @apply inline-flex items-center justify-center rounded-xl px-5 py-3 font-semibold text-white bg-[rgb(var(--primary))] transition hover:opacity-95;
+  }
+
+  .btnGhost {
+    @apply inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-5 py-3 font-semibold transition hover:bg-slate-50;
+  }
+
+  .pill {
+    @apply inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1 text-sm;
+  }
+
+  .subtleGrid {
+    background-image: radial-gradient(circle at 1px 1px, rgba(2, 6, 23, 0.06) 1px, transparent 0);
+    background-size: 22px 22px;
+  }
+}
+
+@keyframes floatSoft {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.hero-float {
+  animation: floatSoft 6s ease-in-out infinite;
+}
+
+.floating-person-wrapper {
+  position: absolute;
+  left: 65%;
+  top: -222px;
+  z-index: 30;
+  pointer-events: none;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.floating-person-img {
+  width: auto;
+  height: auto;
+  max-width: 520px;
+}
+
+@media (max-width: 1024px) {
+  .floating-person-wrapper {
+    right: 2%;
+    top: -80px;
+  }
+
+  .floating-person-img {
+    width: 320px;
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  .floating-person-wrapper {
+    display: none;
+  }
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.6s ease forwards;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
