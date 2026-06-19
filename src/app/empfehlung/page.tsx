@@ -1,8 +1,10 @@
 "use client";
 
 import { useRef, useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function EmpfehlungPage() {
+  const router = useRouter();
   const formRef = useRef<HTMLFormElement | null>(null);
 
   const [contactPermission, setContactPermission] = useState("");
@@ -181,7 +183,7 @@ export default function EmpfehlungPage() {
 
             <button
               type="button"
-              onClick={() => { setSuccessModalOpen(false); scrollPageToTop(); }}
+              onClick={() => { setSuccessModalOpen(false); router.push("/"); }}
               className="absolute right-5 top-5 flex h-9 w-9 items-center justify-center rounded-full bg-slate-100 text-xl text-slate-500 transition hover:bg-slate-200 hover:text-slate-800"
               aria-label="Fenster schließen"
             >
@@ -239,7 +241,7 @@ export default function EmpfehlungPage() {
                 </button>
                 <button
                   type="button"
-                  onClick={() => { setSuccessModalOpen(false); scrollPageToTop(); }}
+                  onClick={() => { setSuccessModalOpen(false); router.push("/"); }}
                   className="rounded-2xl border border-slate-200 bg-white px-5 py-3.5 font-bold text-slate-700 transition hover:bg-slate-50 active:scale-95"
                 >
                   Fertig
