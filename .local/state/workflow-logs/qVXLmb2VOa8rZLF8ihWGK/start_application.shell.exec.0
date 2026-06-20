@@ -1,0 +1,25 @@
+
+> stromdealz@0.1.0 dev
+> next dev -p 5000
+
+[1G[0K[1m[38;2;173;127;168m▲ Next.js 16.1.4[39m[22m (Turbopack)
+- Local:         http://localhost:5000
+- Network:       http://172.31.74.194:5000
+- Environments: .env.local
+
+[32m[1m✓[22m[39m Starting...
+[35m[1mAttention[22m[39m: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+[36mhttps://nextjs.org/telemetry[39m
+
+[32m[1m✓[22m[39m Ready in 1381ms
+[37m[1m○[22m[39m Compiling / ...
+ GET / [32m200[39m in 4.3s[2m (compile: 3.8s, render: 542ms)[22m
+ GET / [32m200[39m in 244ms[2m (compile: 5ms, render: 239ms)[22m
+[33m[1m⚠[22m[39m Cross origin request detected from 26e2f5d1-b16a-4b40-87e6-32c45d37da11-00-vbncj8imcrsz.janeway.replit.dev to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ GET / [32m200[39m in 91ms[2m (compile: 5ms, render: 86ms)[22m
+ GET / [32m200[39m in 731ms[2m (compile: 640ms, render: 92ms)[22m
+ GET /gutschein-anfordern/wunschgutschein [33m404[39m in 1321ms[2m (compile: 1222ms, render: 99ms)[22m
+ GET /gutschein-anfordern/k7p4v2x9 [32m200[39m in 619ms[2m (compile: 53ms, render: 567ms)[22m

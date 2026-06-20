@@ -1,0 +1,59 @@
+
+> stromdealz@0.1.0 dev
+> next dev -p 5000
+
+[1G[0K[1m[38;2;173;127;168m▲ Next.js 16.1.4[39m[22m (Turbopack)
+- Local:         http://localhost:5000
+- Network:       http://172.24.0.2:5000
+- Environments: .env.local
+
+[32m[1m✓[22m[39m Starting...
+[35m[1mAttention[22m[39m: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+[36mhttps://nextjs.org/telemetry[39m
+
+[32m[1m✓[22m[39m Ready in 682ms
+ GET / [32m200[39m in 3.5s[2m (compile: 3.1s, render: 372ms)[22m
+ GET / [32m200[39m in 2.2s[2m (compile: 1699ms, render: 516ms)[22m
+[33m[1m⚠[22m[39m Cross origin request detected from 29f7e519-b7a6-4ea7-8fc9-9b0b2da26936-00-3s1a3oar45nxl.picard.replit.dev to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ GET / [32m200[39m in 107ms[2m (compile: 5ms, render: 102ms)[22m
+ GET / [32m200[39m in 23ms[2m (compile: 5ms, render: 18ms)[22m
+ GET / [32m200[39m in 42ms[2m (compile: 4ms, render: 38ms)[22m
+ GET /standorte [32m200[39m in 445ms[2m (compile: 416ms, render: 28ms)[22m
+ GET /empfehlung [32m200[39m in 432ms[2m (compile: 359ms, render: 74ms)[22m
+ POST /api/empfehlung [32m200[39m in 2.5s[2m (compile: 404ms, render: 2.1s)[22m
+ POST /api/empfehlung [32m200[39m in 2.0s[2m (compile: 8ms, render: 1995ms)[22m
+[32m[1m✓[22m[39m Compiled in 442ms
+[32m[1m✓[22m[39m Compiled in 286ms
+[32m[1m✓[22m[39m Compiled in 441ms
+ GET / [32m200[39m in 540ms[2m (compile: 305ms, render: 236ms)[22m
+ GET /empfehlung [32m200[39m in 538ms[2m (compile: 478ms, render: 60ms)[22m
+ GET / [32m200[39m in 59ms[2m (compile: 6ms, render: 52ms)[22m
+ GET / [32m200[39m in 24ms[2m (compile: 3ms, render: 21ms)[22m
+ GET /empfehlung [32m200[39m in 26ms[2m (compile: 2ms, render: 23ms)[22m
+ GET /empfehlung [32m200[39m in 54ms[2m (compile: 4ms, render: 50ms)[22m
+[32m[1m✓[22m[39m Compiled in 882ms
+ GET / [32m200[39m in 657ms[2m (compile: 3ms, render: 655ms)[22m
+ GET /empfehlung [32m200[39m in 945ms[2m (compile: 182ms, render: 763ms)[22m
+ GET / [32m200[39m in 948ms[2m (compile: 65ms, render: 883ms)[22m
+ GET / [32m200[39m in 62ms[2m (compile: 6ms, render: 55ms)[22m
+ GET /empfehlung [32m200[39m in 159ms[2m (compile: 12ms, render: 147ms)[22m
+ GET /empfehlung [32m200[39m in 60ms[2m (compile: 23ms, render: 37ms)[22m
+ GET /empfehlung [32m200[39m in 56ms[2m (compile: 3ms, render: 53ms)[22m
+ GET / [32m200[39m in 32ms[2m (compile: 7ms, render: 25ms)[22m
+ GET /empfehlung [32m200[39m in 29ms[2m (compile: 4ms, render: 25ms)[22m
+ GET / [32m200[39m in 101ms[2m (compile: 3ms, render: 98ms)[22m
+ GET /empfehlung [32m200[39m in 67ms[2m (compile: 4ms, render: 63ms)[22m
+ POST /api/empfehlung [32m200[39m in 2.1s[2m (compile: 3ms, render: 2.1s)[22m
+[32m[1m✓[22m[39m Compiled in 150ms
+[32m[1m✓[22m[39m Compiled in 201ms
+[32m[1m✓[22m[39m Compiled in 166ms
+[32m[1m✓[22m[39m Compiled in 145ms
+[32m[1m✓[22m[39m Compiled in 224ms
+[32m[1m✓[22m[39m Compiled in 191ms
+ GET /empfehlung [32m200[39m in 241ms[2m (compile: 102ms, render: 138ms)[22m
+ GET /empfehlung [32m200[39m in 79ms[2m (compile: 6ms, render: 73ms)[22m
+ POST /api/empfehlung [32m200[39m in 2.6s[2m (compile: 601ms, render: 1979ms)[22m
+ GET / [32m200[39m in 596ms[2m (compile: 545ms, render: 51ms)[22m
