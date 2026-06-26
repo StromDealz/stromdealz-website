@@ -291,13 +291,17 @@ export async function POST(request: Request) {
       );
     }
 
-    const smtpHost = getEnv("REFERRAL_SMTP_HOST");
-    const smtpPort = Number(process.env.REFERRAL_SMTP_PORT || 465);
-    const smtpSecure = String(process.env.REFERRAL_SMTP_SECURE || "true").toLowerCase() === "true";
-    const smtpUser = getEnv("REFERRAL_SMTP_USER");
-    const smtpPass = getEnv("REFERRAL_SMTP_PASS");
-    const smtpFrom = process.env.REFERRAL_SMTP_FROM || `StromDealz <${smtpUser}>`;
-    const receiverEmail = process.env.REFERRAL_RECEIVER_EMAIL || smtpUser;
+const smtpHost = process.env.REFERRAL_SMTP_HOST || process.env.SMTP_HOST;
+const smtpPort = Number(process.env.REFERRAL_SMTP_PORT || process.env.SMTP_PORT || 465);
+const smtpSecure = String(process.env.REFERRAL_SMTP_SECURE || process.env.SMTP_SECURE || "true").toLowerCase() === "true";
+const smtpUser = process.env.REFERRAL_SMTP_USER || process.env.SMTP_USER;
+const smtpPass = process.env.REFERRAL_SMTP_PASS || process.env.SMTP_PASS;
+const smtpFrom = process.env.REFERRAL_SMTP_FROM || process.env.SMTP_FROM || `StromDealz <${smtpUser}>`;
+const receiverEmail = process.env.REFERRAL_RECEIVER_EMAIL || process.env.RECEIVER_EMAIL || smtpUser;
+
+if (!smtpHost) throw new Error("ENV_MISSING:REFERRAL_SMTP_HOST oder SMTP_HOST");
+if (!smtpUser) throw new Error("ENV_MISSING:REFERRAL_SMTP_USER oder SMTP_USER");
+if (!smtpPass) throw new Error("ENV_MISSING:REFERRAL_SMTP_PASS oder SMTP_PASS");
 
     const transporter = nodemailer.createTransport({
       host: smtpHost,
